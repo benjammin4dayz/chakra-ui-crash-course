@@ -7,19 +7,25 @@ export const Sidebar = () => {
     <List.Root color="white" fontSize="1.2em" gap={4}>
       <List.Item>
         <Icon mr="0.2em">
-          <FaCalendar color="white" />
+          <span>
+            <FaCalendar color="white" />
+          </span>
         </Icon>
         <NavLink to="/">Dashboard</NavLink>
       </List.Item>
       <List.Item>
         <Icon mr="0.2em">
-          <FaEdit color="white" />
+          <span>
+            <FaEdit color="white" />
+          </span>
         </Icon>
         <NavLink to="/create">New Task</NavLink>
       </List.Item>
       <List.Item>
         <Icon mr="0.2em">
-          <FaAt color="white" />
+          <span>
+            <FaAt color="white" />
+          </span>
         </Icon>
         <NavLink to="/profile">Profile</NavLink>
       </List.Item>
