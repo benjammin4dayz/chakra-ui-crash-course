@@ -10,7 +10,7 @@ import {
 
 export const Navbar = () => {
   return (
-    <Flex as="nav" p="10px" alignItems="center" gap="10px">
+    <Flex as="nav" p="10px" mb="40px" alignItems="center" gap="10px">
       <Heading as="h1">Dojo Tasks</Heading>
       <Spacer />
 
