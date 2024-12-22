@@ -4,29 +4,17 @@ import { FaCalendar, FaEdit, FaAt } from 'react-icons/fa';
 
 export const Sidebar = () => {
   return (
-    <List.Root color="white" fontSize="1.2em" gap={4}>
+    <List.Root color="white" fontSize="1.2em" gap={4} listStyleType="none">
       <List.Item>
-        <Icon mr="0.2em">
-          <span>
-            <FaCalendar color="white" />
-          </span>
-        </Icon>
+        <List.Indicator as={FaCalendar} color="white" />
         <NavLink to="/">Dashboard</NavLink>
       </List.Item>
       <List.Item>
-        <Icon mr="0.2em">
-          <span>
-            <FaEdit color="white" />
-          </span>
-        </Icon>
+        <List.Indicator as={FaEdit} color="white" />
         <NavLink to="/create">New Task</NavLink>
       </List.Item>
       <List.Item>
-        <Icon mr="0.2em">
-          <span>
-            <FaAt color="white" />
-          </span>
-        </Icon>
+        <List.Indicator as={FaAt} color="white" />
         <NavLink to="/profile">Profile</NavLink>
       </List.Item>
     </List.Root>
