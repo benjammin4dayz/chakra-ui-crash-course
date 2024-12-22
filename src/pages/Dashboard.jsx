@@ -10,6 +10,7 @@ import {
   SimpleGrid,
   Text,
 } from '@chakra-ui/react';
+import { Avatar } from '../components/ui/avatar';
 import { useLoaderData } from 'react-router-dom';
 import { FaEye, FaEdit } from 'react-icons/fa';
 
@@ -29,7 +30,7 @@ export default function Dashboard() {
             <Card.Header>
               <Flex gap={3}>
                 <Box w="50px" h="50px">
-                  <Text>AV</Text>
+                  <Avatar src={task.img} />
                 </Box>
                 <Box>
                   <Heading as="h3" size="sm">
